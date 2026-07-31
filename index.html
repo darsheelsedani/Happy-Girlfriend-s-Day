@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Girlfriend's Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#ffeef6);
+color:#333;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+text-align:center;
+
+background-image:url("6.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+position:relative;
+overflow:hidden;
+}
+
+section::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+z-index:0;
+}
+
+section>*{
+position:relative;
+z-index:1;
+}
+h1{
+font-size:65px;
+font-family:'Great Vibes',cursive;
+color:#ff2d75;
+}
+
+h2{
+font-size:42px;
+margin-bottom:20px;
+color:#ff2d75;
+}
+
+p{
+max-width:800px;
+font-size:18px;
+line-height:1.8;
+color:#ffffff;
+text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+}
+
+button{
+padding:15px 40px;
+font-size:18px;
+border:none;
+border-radius:50px;
+background:#ff2d75;
+color:white;
+cursor:pointer;
+margin-top:30px;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.heart{
+position:fixed;
+font-size:24px;
+animation:float 6s linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+30%{
+opacity:1;
+}
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:100%;
+max-width:1000px;
+margin-top:40px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+
+background:white;
+padding:12px 12px 50px;
+
+border-radius:6px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.35);
+
+transition:.4s ease;
+cursor:pointer;
+}
+
+.gallery img:nth-child(1){
+transform:rotate(-8deg);
+}
+
+.gallery img:nth-child(2){
+transform:rotate(6deg);
+}
+
+.gallery img:nth-child(3){
+transform:rotate(-5deg);
+}
+
+.gallery img:nth-child(4){
+transform:rotate(7deg);
+}
+
+.gallery img:hover{
+transform:scale(1.08) rotate(0deg);
+box-shadow:0 20px 45px rgba(0,0,0,.45);
+z-index:10;
+}
+
+.timeline{
+max-width:900px;
+width:100%;
+}
+
+.card{
+background:rgba(255,214,232,0.18);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+
+padding:25px;
+border-radius:25px;
+margin:20px 0;
+
+border:1px solid rgba(255,255,255,0.35);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.15);
+
+text-align:left;
+}
+
+.reasons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+width:100%;
+max-width:1100px;
+}
+
+.reason{
+background:rgba(255,214,232,.18);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+
+padding:25px;
+
+border-radius:22px;
+
+border:1px solid rgba(255,255,255,.35);
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.18);
+
+color:white;
+
+transition:.35s;
+
+cursor:pointer;
+}
+
+
+.reason:hover{
+transform:translateY(-12px) scale(1.05);
+
+background:rgba(255,214,232,.3);
+
+box-shadow:
+0 18px 40px rgba(255,45,117,.25);
+}
+
+.reason:nth-child(odd){
+transform:rotate(-2deg);
+}
+
+.reason:nth-child(even){
+transform:rotate(2deg);
+}
+
+.reason:nth-child(odd):hover,
+.reason:nth-child(even):hover{
+transform:rotate(0deg) scale(1.05);
+}
+
+.countdown{
+font-size:50px;
+font-weight:bold;
+margin-top:20px;
+color:#ff2d75;
+}
+
+.final{
+font-size:28px;
+max-width:900px;
+line-height:1.8;
+}
+
+audio{
+margin-top:30px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(70px);
+transition:all 1s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="fade">
+
+<h1>Happy Girlfriend's Day Babbu <3❤️</h1>
+
+<p style="margin-top:20px;">
+Hieee <b>Babbu</b>,
+
+I know we're far apart, but I wanted to make something that you can keep forever.
+Also happy 3 month anniversary 🥰💖😉. I LOVE YOU SOO MUCHH <333
+</p>
+
+<button onclick="document.getElementById('gallery').scrollIntoView()">
+Start ❤️
+</button>
+
+</section>
+
+<section id="gallery" class="fade">
+
+<h2>I LOVE THESEEEE 😳😩</h2>
+
+<div class="gallery">
+
+<img src="1.jpg">
+
+<img src="5.jpg">
+
+<img src="3.jpg">
+
+<img src="4.jpg">
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Our Story 💌</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>🌸 The Beginning 🌸</h3>
+<p>I still remember jab raat bhar jagke subah tak baate karte the, movies dekhte hai, and singing (I love your singing btw).Mujhe kabhi nahi laga tha ki those conversations would lead me to someone becoming such an important part of my life, and before I fucking knew it, you became the person I wanted to tell everything to, thank you for making my ordinary days special <3. I'm so glad we met together in a game (XD), you are legit the best!!! </p>
+</div>
+
+<div class="card">
+<h3>❤️ My Favorite Memory ❤️</h3>
+<p>Well, everything with you is my favourite memory but if I had to choose, it would be probably tere saath raat bhar jagna and movies dekhna.Every laugh, every little conversation, every second of that moment reminds me why I fell for you. It's one of those memories I think about whenever I miss you. Legit just spending time with you feels so nice 🫶😘</p>
+</div>
+
+<div class="card">
+<h3>✨ Today ✨</h3>
+<p>You're the first person I want to tell good news to, and the one I think about when things get difficult. This distance isn't always easy babbu, but ik we will prove everyone wrong and will stay together one day. I fucking believe it. I legit can't wait for this distance to be over. Until then, I'll keep choosing you, every single day.MWAHH 💋💋</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Reasons I Love You Sooooo Muchhhh ❤️</h2>
+
+<div class="reasons">
+
+<div class="reason">1. Teri smile.</div>
+<div class="reason">2. The fact that you always make me laugh.</div>
+<div class="reason">3. You're W RIZZZZ.</div>
+<div class="reason">4. You believe in meeee</div>
+<div class="reason">5. You're fucking GORGEOUSS.</div>
+<div class="reason">6. You're soo Kind🥰🥹.</div>
+<div class="reason">7. Your Angelic Voice.</div>
+<div class="reason">8. Our conversations makes me so happy, I love talking to you.</div>
+<div class="reason">9. Your hugsss and kissess.</div>
+<div class="reason">10. You make so caringg.</div>
+<div class="reason">11. You Supportt Me 🫶.</div>
+<div class="reason">12. You're HOTTTTT.</div>
+<div class="reason">13. You're ADORABLEEE.</div>
+<div class="reason">14. You console me on my BAD timess.</div>
+<div class="reason">15. You're my safe place😘.</div>
+<div class="reason">16. You are so understandingg.</div>
+<div class="reason">17. You're my Lucky Charm 🤞.</div>
+<div class="reason">18. You INSPIRE me.</div>
+<div class="reason">19. You make life SHINE✨.</div>
+<div class="reason">20. Because you're mineeee alwaysss💝.</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Countdown Until We Meet ❤️</h2>
+
+<div id="timer" class="countdown"></div>
+
+</section>
+
+<section class="fade">
+
+<h2>A Song Dedicated Just To You Baby 🎵</h2>
+
+<audio controls>
+<source src="Final.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
+<section class="fade">
+
+<h2>One Last Thing...</h2>
+
+<p class="final">
+
+Distance will never changed how much I care about you!!!
+
+If anything, it shows me how special you are darling.
+
+No matter how many kilometers separate us,
+you will be always have a place in my heart <333
+
+Happy Girlfriend's Day and Happy 3 Month Anniversary to Us ❤️
+
+I LOVE YOUUU SOO FUCKINNG MUCHH OMGGG 🥰😘💘!!!!
+(I MISS YOU SOO MUCHH JALDI AAJAO 😭🫶)
+
+Forever yours,
+
+<b>Yours and Yours only DARSHU <33333</b>
+
+</p>
+
+</section>
+
+<script>
+
+const targetDate = new Date("May 1, 2030 00:00:00");
+
+function update(){
+
+const now = new Date();
+
+const diff = targetDate-now;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("timer").innerHTML=
+days+" Days";
+
+}
+
+update();
+
+setInterval(update,1000);
+
+function heart(){
+
+const h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(12+Math.random()*18)+"px";
+
+h.style.opacity=Math.random();
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},6000);
+
+}
+
+setInterval(heart,500);
+
+// Fade animation
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.2});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
